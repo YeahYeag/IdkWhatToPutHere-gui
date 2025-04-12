@@ -1,0 +1,354 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local gui = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Sky = Instance.new("TextButton")
+local Decal = Instance.new("TextButton")
+local Disco = Instance.new("TextButton")
+local Theme = Instance.new("TextButton")
+local Jumpscare = Instance.new("TextButton")
+local c00lkid = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+gui.Name = "gui"
+gui.Parent = ScreenGui
+gui.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+gui.BorderColor3 = Color3.fromRGB(255, 255, 255)
+gui.BorderSizePixel = 3
+gui.Position = UDim2.new(0.320619583, 0, 0.26051572, 0)
+gui.Size = UDim2.new(0, 415, 0, 210)
+
+TextLabel.Parent = gui
+TextLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 3
+TextLabel.Size = UDim2.new(0, 415, 0, 41)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "IdkWhatToPutHere gui"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 40.000
+TextLabel.TextStrokeTransparency = 0.000
+
+Sky.Name = "Sky"
+Sky.Parent = gui
+Sky.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Sky.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Sky.BorderSizePixel = 3
+Sky.Position = UDim2.new(0, 0, 0.228410915, 0)
+Sky.Size = UDim2.new(0, 108, 0, 50)
+Sky.Font = Enum.Font.SourceSansBold
+Sky.Text = "Skybox"
+Sky.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sky.TextSize = 30.000
+Sky.TextStrokeTransparency = 0.000
+
+Decal.Name = "Decal"
+Decal.Parent = gui
+Decal.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Decal.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Decal.BorderSizePixel = 3
+Decal.Position = UDim2.new(0.371084332, 0, 0.228410915, 0)
+Decal.Size = UDim2.new(0, 108, 0, 50)
+Decal.Font = Enum.Font.SourceSansBold
+Decal.Text = "Decal"
+Decal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Decal.TextSize = 30.000
+Decal.TextStrokeTransparency = 0.000
+
+Disco.Name = "Disco"
+Disco.Parent = gui
+Disco.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Disco.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Disco.BorderSizePixel = 3
+Disco.Position = UDim2.new(0.739759028, 0, 0.228410915, 0)
+Disco.Size = UDim2.new(0, 108, 0, 50)
+Disco.Font = Enum.Font.SourceSansBold
+Disco.Text = "Disco"
+Disco.TextColor3 = Color3.fromRGB(255, 255, 255)
+Disco.TextSize = 30.000
+Disco.TextStrokeTransparency = 0.000
+
+Theme.Name = "Theme"
+Theme.Parent = gui
+Theme.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Theme.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Theme.BorderSizePixel = 3
+Theme.Position = UDim2.new(0, 0, 0.724344611, 0)
+Theme.Size = UDim2.new(0, 108, 0, 50)
+Theme.Font = Enum.Font.SourceSansBold
+Theme.Text = "Theme"
+Theme.TextColor3 = Color3.fromRGB(255, 255, 255)
+Theme.TextSize = 30.000
+Theme.TextStrokeTransparency = 0.000
+
+Jumpscare.Name = "Jumpscare"
+Jumpscare.Parent = gui
+Jumpscare.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Jumpscare.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Jumpscare.BorderSizePixel = 3
+Jumpscare.Position = UDim2.new(0.371084332, 0, 0.724344611, 0)
+Jumpscare.Size = UDim2.new(0, 108, 0, 50)
+Jumpscare.Font = Enum.Font.SourceSansBold
+Jumpscare.Text = "Jumpscare"
+Jumpscare.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jumpscare.TextSize = 30.000
+Jumpscare.TextStrokeTransparency = 0.000
+
+c00lkid.Name = "c00lkid"
+c00lkid.Parent = gui
+c00lkid.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+c00lkid.BorderColor3 = Color3.fromRGB(255, 255, 255)
+c00lkid.BorderSizePixel = 3
+c00lkid.Position = UDim2.new(0.739759028, 0, 0.723649085, 0)
+c00lkid.Size = UDim2.new(0, 108, 0, 50)
+c00lkid.Font = Enum.Font.SourceSansBold
+c00lkid.Text = "c00lkid"
+c00lkid.TextColor3 = Color3.fromRGB(255, 255, 255)
+c00lkid.TextSize = 30.000
+c00lkid.TextStrokeTransparency = 0.000
+
+-- Scripts:
+
+local function TAECH_fake_script() -- Sky.Skybox 
+	local script = Instance.new('LocalScript', Sky)
+
+	function click()
+		s = Instance.new("Sky")
+		s.Name = "Sky"
+		s.Parent = game.Lighting
+		s.SkyboxBk = "http://www.roblox.com/asset/?id=82075135392381"
+		s.SkyboxDn = "http://www.roblox.com/asset/?id=82075135392381"
+		s.SkyboxFt = "http://www.roblox.com/asset/?id=82075135392381"
+		s.SkyboxLf = "http://www.roblox.com/asset/?id=82075135392381"
+		s.SkyboxRt = "http://www.roblox.com/asset/?id=82075135392381" 
+		s.SkyboxUp = "http://www.roblox.com/asset/?id=82075135392381"
+		game.Lighting.TimeOfDay = 12
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(TAECH_fake_script)()
+local function NLYC_fake_script() -- Decal.DecalSpam 
+	local script = Instance.new('LocalScript', Decal)
+
+	function click()
+		function exPro(root)
+			for _, v in pairs(root:GetChildren()) do
+				if v:IsA("Decal") and v.Texture ~= "http://www.roblox.com/asset/?id=82075135392381" then
+					v.Parent = nil
+				elseif v:IsA("BasePart") then
+					v.Material = "Plastic"
+					v.Transparency = 0
+					local One = Instance.new("Decal", v)
+					local Two = Instance.new("Decal", v)
+					local Three = Instance.new("Decal", v)
+					local Four = Instance.new("Decal", v)
+					local Five = Instance.new("Decal", v)
+					local Six = Instance.new("Decal", v)
+					One.Texture = "http://www.roblox.com/asset/?id=82075135392381"
+					Two.Texture = "http://www.roblox.com/asset/?id=82075135392381"
+					Three.Texture = "http://www.roblox.com/asset/?id=82075135392381"
+					Four.Texture = "http://www.roblox.com/asset/?id=82075135392381"
+					Five.Texture = "http://www.roblox.com/asset/?id=82075135392381"
+					Six.Texture = "http://www.roblox.com/asset/?id=82075135392381"
+					One.Face = "Front"
+					Two.Face = "Back"
+					Three.Face = "Right"
+					Four.Face = "Left"
+					Five.Face = "Top"
+					Six.Face = "Bottom"
+				end
+				exPro(v)
+			end
+		end
+		function asdf(root)
+			for _, v in pairs(root:GetChildren()) do
+				asdf(v)
+			end
+		end
+		exPro(game.Workspace)
+		asdf(game.Workspace)
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+	
+end
+coroutine.wrap(NLYC_fake_script)()
+local function GDHBIR_fake_script() -- Disco.Disco 
+	local script = Instance.new('LocalScript', Disco)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local Lighting = game:GetService("Lighting")
+		local ColorCorrection = Instance.new("ColorCorrectionEffect", Lighting)
+	
+		function zigzag(X) 
+			return math.acos(math.cos(X*math.pi))/math.pi
+		end
+	
+		Counter = 0
+	
+		Lighting.TimeOfDay = "15:00"
+	
+		while wait(0.1) do 
+			ColorCorrection.TintColor = Color3.fromHSV(zigzag(Counter),1,1)
+			Lighting.Ambient = Color3.fromHSV(zigzag(Counter),1,1)
+			Counter += 0.01
+		end
+	end)
+	
+end
+coroutine.wrap(GDHBIR_fake_script)()
+local function SAMMIF_fake_script() -- Theme.Theme's 
+	local script = Instance.new('LocalScript', Theme)
+
+	local Sound = script.Parent.Music
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Sound:Play()
+	end)
+end
+coroutine.wrap(SAMMIF_fake_script)()
+local function RAMHMC_fake_script() -- Jumpscare.Jumpscares 
+	local script = Instance.new('LocalScript', Jumpscare)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if v.Name ~= me and not v.PlayerGui:FindFirstChild("Screamer") and v:FindFirstChild("PlayerGui") then
+				spawn(function()
+					local newgui = Instance.new("ScreenGui",v.PlayerGui)
+					newgui.Name = "Screamer"
+					local newimage = Instance.new("ImageLabel",newgui)
+					newimage.Image = "http://www.roblox.com/asset/?id=77461761760104"
+					newimage.Size = UDim2.new(1,1,1,1)
+					local s = Instance.new("Sound",newgui)
+					s.SoundId = "rbxassetid://6129291390"
+					s.Volume = math.huge
+					s.Looped = false
+					s:Play()
+					print("Screamed "..v.Name)
+					while wait(9) do
+	
+						newimage.Parent:Destroy()
+	
+					end
+				end)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(RAMHMC_fake_script)()
+local function MGYEWL_fake_script() -- c00lkid.c00lkid 
+	local script = Instance.new('LocalScript', c00lkid)
+
+	function click()
+		s = Instance.new("Sky")
+		s.Name = "Sky"
+		s.Parent = game.Lighting
+		s.SkyboxBk = "http://www.roblox.com/asset/?id=113683131806910"
+		s.SkyboxDn = "http://www.roblox.com/asset/?id=113683131806910"
+		s.SkyboxFt = "http://www.roblox.com/asset/?id=113683131806910"
+		s.SkyboxLf = "http://www.roblox.com/asset/?id=113683131806910"
+		s.SkyboxRt = "http://www.roblox.com/asset/?id=113683131806910" 
+		s.SkyboxUp = "http://www.roblox.com/asset/?id=113683131806910"
+		game.Lighting.TimeOfDay = 12
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+	
+	function click()
+				function exPro(root)
+					for _, v in pairs(root:GetChildren()) do
+						if v:IsA("Decal") and v.Texture ~= "http://www.roblox.com/asset/?id=113683131806910" then
+							v.Parent = nil
+						elseif v:IsA("BasePart") then
+							v.Material = "Plastic"
+							v.Transparency = 0
+							local One = Instance.new("Decal", v)
+							local Two = Instance.new("Decal", v)
+							local Three = Instance.new("Decal", v)
+							local Four = Instance.new("Decal", v)
+							local Five = Instance.new("Decal", v)
+							local Six = Instance.new("Decal", v)
+							One.Texture = "http://www.roblox.com/asset/?id=113683131806910"
+							Two.Texture = "http://www.roblox.com/asset/?id=113683131806910"
+							Three.Texture = "http://www.roblox.com/asset/?id=113683131806910"
+							Four.Texture = "http://www.roblox.com/asset/?id=113683131806910"
+							Five.Texture = "http://www.roblox.com/asset/?id=113683131806910"
+							Six.Texture = "http://www.roblox.com/asset/?id=113683131806910"
+							One.Face = "Front"
+							Two.Face = "Back"
+							Three.Face = "Right"
+							Four.Face = "Left"
+							Five.Face = "Top"
+							Six.Face = "Bottom"
+						end
+						exPro(v)
+					end
+				end
+				function asdf(root)
+					for _, v in pairs(root:GetChildren()) do
+						asdf(v)
+					end
+				end
+				exPro(game.Workspace)
+				asdf(game.Workspace)
+			end
+	
+			script.Parent.MouseButton1Down:connect(click)
+	
+	local Sound = script.Parent.c00l
+	script.Parent.MouseButton1Click:Connect(function()
+		Sound:Play()
+	end)
+end
+coroutine.wrap(MGYEWL_fake_script)()
+local function TMCQKQD_fake_script() -- gui.Draggable gui 
+	local script = Instance.new('LocalScript', gui)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(TMCQKQD_fake_script)()
