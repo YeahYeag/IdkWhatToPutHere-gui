@@ -1,0 +1,346 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local gui = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local _4 = Instance.new("TextButton")
+local _3 = Instance.new("TextButton")
+local _2 = Instance.new("TextButton")
+local _1 = Instance.new("TextButton")
+local B = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+gui.Name = "gui"
+gui.Parent = ScreenGui
+gui.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+gui.BorderColor3 = Color3.fromRGB(252, 255, 66)
+gui.BorderSizePixel = 2
+gui.Position = UDim2.new(0.159249559, 0, 0.0768849179, 0)
+gui.Size = UDim2.new(0, 623, 0, 340)
+
+TextLabel.Name = "@"
+TextLabel.Parent = gui
+TextLabel.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+TextLabel.BorderColor3 = Color3.fromRGB(252, 252, 65)
+TextLabel.BorderSizePixel = 2
+TextLabel.Position = UDim2.new(0.00160513644, 0, 0.00294117653, 0)
+TextLabel.Size = UDim2.new(0, 622, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "IdkWhatToPutHere gui v2"
+TextLabel.TextColor3 = Color3.fromRGB(255, 241, 92)
+TextLabel.TextSize = 40.000
+
+TextButton.Name = "#####"
+TextButton.Parent = gui
+TextButton.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+TextButton.BorderColor3 = Color3.fromRGB(252, 255, 66)
+TextButton.BorderSizePixel = 2
+TextButton.Position = UDim2.new(0.022404898, 0, 0.187145323, 0)
+TextButton.Size = UDim2.new(0, 123, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Sky"
+TextButton.TextColor3 = Color3.fromRGB(255, 249, 80)
+TextButton.TextSize = 40.000
+
+TextButton_2.Name = "####"
+TextButton_2.Parent = gui
+TextButton_2.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+TextButton_2.BorderColor3 = Color3.fromRGB(252, 255, 66)
+TextButton_2.BorderSizePixel = 2
+TextButton_2.Position = UDim2.new(0.267746329, 0, 0.188611373, 0)
+TextButton_2.Size = UDim2.new(0, 123, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Decal"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 249, 80)
+TextButton_2.TextSize = 40.000
+
+TextButton_3.Name = "###"
+TextButton_3.Parent = gui
+TextButton_3.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+TextButton_3.BorderColor3 = Color3.fromRGB(252, 255, 66)
+TextButton_3.BorderSizePixel = 2
+TextButton_3.Position = UDim2.new(0.512573361, 0, 0.188243642, 0)
+TextButton_3.Size = UDim2.new(0, 123, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Disco"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 249, 80)
+TextButton_3.TextSize = 40.000
+
+TextButton_4.Name = "##"
+TextButton_4.Parent = gui
+TextButton_4.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+TextButton_4.BorderColor3 = Color3.fromRGB(252, 255, 66)
+TextButton_4.BorderSizePixel = 2
+TextButton_4.Position = UDim2.new(0.762934268, 0, 0.190077499, 0)
+TextButton_4.Size = UDim2.new(0, 123, 0, 50)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Jumpscare"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 249, 80)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 40.000
+TextButton_4.TextWrapped = true
+
+TextButton_5.Name = "#"
+TextButton_5.Parent = gui
+TextButton_5.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+TextButton_5.BorderColor3 = Color3.fromRGB(252, 255, 66)
+TextButton_5.BorderSizePixel = 2
+TextButton_5.Position = UDim2.new(0.0237273928, 0, 0.427194655, 0)
+TextButton_5.Size = UDim2.new(0, 123, 0, 50)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Theme"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 249, 80)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 40.000
+TextButton_5.TextWrapped = true
+
+_4.Name = "4"
+_4.Parent = gui
+_4.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+_4.BorderColor3 = Color3.fromRGB(252, 255, 66)
+_4.BorderSizePixel = 2
+_4.Position = UDim2.new(0.267631948, 0, 0.427622944, 0)
+_4.Size = UDim2.new(0, 123, 0, 50)
+_4.Font = Enum.Font.SourceSans
+_4.Text = "?"
+_4.TextColor3 = Color3.fromRGB(255, 249, 80)
+_4.TextScaled = true
+_4.TextSize = 40.000
+_4.TextWrapped = true
+
+_3.Name = "3"
+_3.Parent = gui
+_3.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+_3.BorderColor3 = Color3.fromRGB(252, 255, 66)
+_3.BorderSizePixel = 2
+_3.Position = UDim2.new(0.761080682, 0, 0.427249134, 0)
+_3.Size = UDim2.new(0, 123, 0, 50)
+_3.Font = Enum.Font.SourceSans
+_3.Text = "?"
+_3.TextColor3 = Color3.fromRGB(255, 249, 80)
+_3.TextScaled = true
+_3.TextSize = 40.000
+_3.TextWrapped = true
+
+_2.Name = "2"
+_2.Parent = gui
+_2.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+_2.BorderColor3 = Color3.fromRGB(252, 255, 66)
+_2.BorderSizePixel = 2
+_2.Position = UDim2.new(0.512319028, 0, 0.425530791, 0)
+_2.Size = UDim2.new(0, 123, 0, 50)
+_2.Font = Enum.Font.SourceSans
+_2.Text = "?"
+_2.TextColor3 = Color3.fromRGB(255, 249, 80)
+_2.TextScaled = true
+_2.TextSize = 40.000
+_2.TextWrapped = true
+
+_1.Name = "1"
+_1.Parent = gui
+_1.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+_1.BorderColor3 = Color3.fromRGB(252, 255, 66)
+_1.BorderSizePixel = 2
+_1.Position = UDim2.new(0.0243575331, 0, 0.678471982, 0)
+_1.Size = UDim2.new(0, 123, 0, 50)
+_1.Font = Enum.Font.SourceSans
+_1.Text = "?"
+_1.TextColor3 = Color3.fromRGB(255, 249, 80)
+_1.TextScaled = true
+_1.TextSize = 40.000
+_1.TextWrapped = true
+
+B.Name = "B"
+B.Parent = gui
+B.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+B.BorderColor3 = Color3.fromRGB(252, 252, 65)
+B.BorderSizePixel = 2
+B.Position = UDim2.new(-1.53812507e-05, 0, 0.851725221, 0)
+B.Size = UDim2.new(0, 622, 0, 50)
+B.Font = Enum.Font.SourceSans
+B.Text = "By VCLGAMER12345"
+B.TextColor3 = Color3.fromRGB(255, 241, 92)
+B.TextSize = 40.000
+
+-- Scripts:
+
+local function HPXYS_fake_script() -- TextButton.Sky 
+	local script = Instance.new('LocalScript', TextButton)
+
+	function click()
+		s = Instance.new("Sky")
+		s.Name = "Sky"
+		s.Parent = game.Lighting
+		s.SkyboxBk = "http://www.roblox.com/asset/?id=106498582278917"
+		s.SkyboxDn = "http://www.roblox.com/asset/?id=106498582278917"
+		s.SkyboxFt = "http://www.roblox.com/asset/?id=106498582278917"
+		s.SkyboxLf = "http://www.roblox.com/asset/?id=106498582278917"
+		s.SkyboxRt = "http://www.roblox.com/asset/?id=106498582278917"
+		s.SkyboxUp = "http://www.roblox.com/asset/?id=106498582278917"
+		game.Lighting.TimeOfDay = 12
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+	
+end
+coroutine.wrap(HPXYS_fake_script)()
+local function QZWREAD_fake_script() -- TextButton_2.Decal 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	function click()
+		function exPro(root)
+			for _, v in pairs(root:GetChildren()) do
+				if v:IsA("Decal") and v.Texture ~= "http://www.roblox.com/asset/?id=106498582278917" then
+					v.Parent = nil
+				elseif v:IsA("BasePart") then
+					v.Material = "Plastic"
+					v.Transparency = 0
+					local One = Instance.new("Decal", v)
+					local Two = Instance.new("Decal", v)
+					local Three = Instance.new("Decal", v)
+					local Four = Instance.new("Decal", v)
+					local Five = Instance.new("Decal", v)
+					local Six = Instance.new("Decal", v)
+					One.Texture = "http://www.roblox.com/asset/?id=106498582278917"
+					Two.Texture = "http://www.roblox.com/asset/?id=106498582278917"
+					Three.Texture = "http://www.roblox.com/asset/?id=106498582278917"
+					Four.Texture = "http://www.roblox.com/asset/?id=106498582278917"
+					Five.Texture = "http://www.roblox.com/asset/?id=106498582278917"
+					Six.Texture = "http://www.roblox.com/asset/?id=106498582278917"
+					One.Face = "Front"
+					Two.Face = "Back"
+					Three.Face = "Right"
+					Four.Face = "Left"
+					Five.Face = "Top"
+					Six.Face = "Bottom"
+				end
+				exPro(v)
+			end
+		end
+		function asdf(root)
+			for _, v in pairs(root:GetChildren()) do
+				asdf(v)
+			end
+		end
+		exPro(game.Workspace)
+		asdf(game.Workspace)
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(QZWREAD_fake_script)()
+local function DYRPKVJ_fake_script() -- TextButton_3.Disco 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Lighting = game:GetService("Lighting")
+		local ColorCorrection = Instance.new("ColorCorrectionEffect", Lighting)
+	
+		function zigzag(X) 
+			return math.acos(math.cos(X*math.pi))/math.pi
+		end
+	
+		Counter = 0
+	
+		Lighting.TimeOfDay = "15:00"
+	
+		while wait(0.1) do 
+			ColorCorrection.TintColor = Color3.fromHSV(zigzag(Counter),1,1)
+			Lighting.Ambient = Color3.fromHSV(zigzag(Counter),1,1)
+			Counter += 0.01
+		end
+	end)
+	
+end
+coroutine.wrap(DYRPKVJ_fake_script)()
+local function QZDW_fake_script() -- TextButton_4.Jumpscare 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if v.Name ~= me and not v.PlayerGui:FindFirstChild("Screamer") and v:FindFirstChild("PlayerGui") then
+				spawn(function()
+					local newgui = Instance.new("ScreenGui",v.PlayerGui)
+					newgui.Name = "Screamer"
+					local newimage = Instance.new("ImageLabel",newgui)
+					newimage.Image = "http://www.roblox.com/asset/?id=106498582278917"
+					newimage.Size = UDim2.new(1,1,1,1)
+					local s = Instance.new("Sound",newgui)
+					s.SoundId = "rbxassetid://6129291390"
+					s.Volume = math.huge
+					s.Looped = false
+					s:Play()
+					print("Screamed "..v.Name)
+					while wait(9) do
+	
+						newimage.Parent:Destroy()
+	
+					end
+				end)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(QZDW_fake_script)()
+local function GJARTL_fake_script() -- TextButton_5.Theme 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local Sound = script.Parent.Music
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Sound:Play()
+	end)
+end
+coroutine.wrap(GJARTL_fake_script)()
+local function IKIUZR_fake_script() -- gui.Drag 
+	local script = Instance.new('LocalScript', gui)
+
+	local UIS = game:GetService("UserInputService")
+	local frame = script.Parent
+	
+	local dragToggle = nil
+	local dragSpeed = 0.1
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale,startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService("TweenService"):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(IKIUZR_fake_script)()
